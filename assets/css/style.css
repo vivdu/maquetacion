@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/*ESTILO GENERAL*/
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+:root{
+	--dark-color:#191919;
+	--white-color:#FFFFFF;
+	--purple-color:rgb(117,41,149);
+	--purple-alpha:rgba(117,41,149,0.4);
+	--blue-color:#00B2B1;
+	--gray-color:#828282;
+	--ligh-color:#F3F3F3;
+}
+
+.logo {
+	margin: 1rem 0;
+	max-width: 280px;
+	width: 100%;}
+
+.ingresar {
+	border: 2px solid var(--purple-color);
+	background-color: var(--purple-color);
+	color: var(--white-color);
+	margin: 0 1rem;
+}
+.ingresar:hover {
+	border: 5px solid var(--purple-color);
+	background-color: var(--white-color);
+	color: var(--purple-color);
+}
+.registrar {
+	border: 2px solid var(--purple-color);
+	background-color: var(--white-color);
+	color: var(--purple-color);
+}
+.registrar:hover {
+	border: 5px solid var(--purple-color);
+	background-color: var(--purple-color);
+	color: var(--white-color);
+}
+.navbar {
+	background-color: var(--purple-color);
+	color: var(--white-color);
+	font-weight: bold;
+}
+.banner h4, h5 {
+	color: var(--purple-color);
+}
+.banner h3 {
+	color: var(--white-color);
+}
+.cita {
+	background-image: url(../img/fondo.jpg);
+}
+.promo {
+	background-color: var(--purple-color);
+
+}
+.promo img {
+	width: 200px;
+}
+
+.title {
+	text-align: center;
+	color: var(--purple-color);
+	font-weight: bold;
+}
+.card {
+	border: none;
+}
+footer {
+	background-image: url(../img/fondo.jpg);
+}
+.footer-box {
+	background-color: var(--purple-alpha);
+	color: var(--white-color);
+}
+#dashboard {
+	width: fit-content;
+	height: 100%;
+}
+.tips {
+	background-image: url(../img/bannertips.jpg);
+	background-position: center;
+	width: 100%;
+	height: 5rem;
+}
+.tips a {
+	color: var(--white-color);
+	text-decoration-line: none;
+}
+.contacto {
+	background-image: url(../img/bannercontacto.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.fondo {
+	background-color: rgba(255,255,255,0.7);
+}
+.fondo h3 {
+	color: var(--purple-color);
+}
+.tip {
+	background-image: url(../img/fondo.jpg);
+}
+
+.animacion {
+	width: 200px;
+	height: 200px;
+	background-color: darkgreen;
+		
+	}
+.animacion {
+		animation-name: slide;
+		animation-duration: 5s;
+		animation-timing-function: normal;
+		animation-delay: 0.5s;
+		animation-iteration-count: 3;
+		animation-direction: normal;
+		animation-fill-mode: none;
+		animation-play-state: running;
+	}
+	@keyframes slide {
+		from {
+			margin-left: 100%;
+			width: 300%
+		}
+		to {
+			margin-left: 0%;
+			width: 0%;
+		}
+	}
